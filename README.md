@@ -1,9 +1,11 @@
-**🚀 ESP32 OLED & RGB LED Controller**
+## 🚀 ESP32 OLED & RGB LED Controller**
 
 This project demonstrates how to control an SSD1306-based OLED display and a common-anode RGB LED with an ESP32. It features both physical and web-based interfaces:
 
 * 🔘 **Physical button**: Cycles through predefined emoji-style faces on the OLED and changes the LED color to preset values.
 * 🌐 **Web interface**: Access a simple HTML form to select a face and manually adjust the RGB channels.
+
+   ![Image](https://github.com/user-attachments/assets/ba8d5556-762b-4f35-b37c-1f074043c988)
 
 ---
 
@@ -17,9 +19,25 @@ This project demonstrates how to control an SSD1306-based OLED display and a com
    * Tries to connect to your local network (SSID/PASSWORD).
    * If STA fails within 20 s, falls back to SoftAP (`ESP32_OLED_AP` / `12345678`).
 5. 💻 **Web server** on port 80 with an HTML form:
+ 
+   *IP initialize After Wi‑Fi connectivity.
+   
+     ![Image](https://github.com/user-attachments/assets/fc089b96-f625-422e-abaa-19df2cd82180)
+   
+
+   *Paste IP in the URL.
+   
+     ![Image](https://github.com/user-attachments/assets/b1aab926-522e-4e7c-91a0-5b8a943abe47)
+
 
    * Select face index (0–5).
+     
+     ![Image](https://github.com/user-attachments/assets/8bf69cc7-0de3-4208-9bb9-21f38a8f6992)
+     
+
    * Enter R, G, B values (0–255).
+
+     ![Image](https://github.com/user-attachments/assets/ba8d5556-762b-4f35-b37c-1f074043c988)
 
 ---
 
@@ -99,18 +117,27 @@ Install the following libraries in the Arduino IDE:
 
 ---
 
-## 📄 Resources & Datasheets
-
-* SSD1306 OLED controller datasheet: [https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf](https://cdn-shop.adafruit.com/datasheets/SSD1306.pdf)
-* OLED 128x64 0.96" display module datasheet: [https://s20f2fdae3465e2c6.jimcontent.com/download/version/1675361647/module/14737241229/name/OLED%204%20Pin%20128x64%20Display%20module%200.96%20inch%20blue%20color.pdf](https://s20f2fdae3465e2c6.jimcontent.com/download/version/1675361647/module/14737241229/name/OLED%204%20Pin%20128x64%20Display%20module%200.96%20inch%20blue%20color.pdf)
-
----
-
 ## 🛠️ Customization
 
 * **Add faces**: Implement new `drawXFace()` and extend `totalScreens` and `presetColors`.
 * **Color presets**: Edit `presetColors` array to change default colors for each face.
 * **Port changes**: Modify pin definitions at top.
+
+---
+## 😀 preview
+
+***faces:**
+
+![Image](https://github.com/user-attachments/assets/94677fe1-9e67-4df6-8d0d-ed8d8a1f1872)
+
+![Image](https://github.com/user-attachments/assets/839c1946-3cbb-45b8-8b72-0bf77a422346)
+
+![Image](https://github.com/user-attachments/assets/b189f9e2-90e5-47f3-aee4-f48d6842d3bb)
+
+![Image](https://github.com/user-attachments/assets/6a8fd5fa-e049-49c8-908c-2a0ab353a364)
+
+![Image](https://github.com/user-attachments/assets/94beb38c-73bf-4ab6-b32e-ee6667b6b182)
+
 
 ---
 
