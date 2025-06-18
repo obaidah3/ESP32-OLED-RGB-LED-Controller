@@ -20,22 +20,29 @@ This project demonstrates how to control an SSD1306-based OLED display and a com
    * If STA fails within 20 s, falls back to SoftAP (`ESP32_OLED_AP` / `12345678`).
 5. 💻 **Web server** on port 80 with an HTML form:
  
-   *IP initialize After Wi‑Fi connectivity.
+   * IP initialize After Wi‑Fi connectivity.
+
    
      ![Image](https://github.com/user-attachments/assets/fc089b96-f625-422e-abaa-19df2cd82180)
    
 
-   *Paste IP in the URL.
+
+   * Paste IP in the URL.
+
    
      ![Image](https://github.com/user-attachments/assets/b1aab926-522e-4e7c-91a0-5b8a943abe47)
 
 
+
    * Select face index (0–5).
+  
      
      ![Image](https://github.com/user-attachments/assets/8bf69cc7-0de3-4208-9bb9-21f38a8f6992)
      
 
+
    * Enter R, G, B values (0–255).
+
 
      ![Image](https://github.com/user-attachments/assets/ba8d5556-762b-4f35-b37c-1f074043c988)
 
